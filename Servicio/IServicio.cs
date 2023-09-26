@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RetiroDeMateriales.Servicio
 {
-    internal interface IServicio
+    public interface IServicio
     {
+
     }
 }
