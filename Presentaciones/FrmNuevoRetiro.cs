@@ -16,5 +16,10 @@ namespace RetiroDeMateriales.Presentaciones
         {
             InitializeComponent();
         }
+
+        private void FrmNuevoRetiro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

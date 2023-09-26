@@ -73,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicio\IServicio.cs" />
     <Compile Include="Servicio\Servicio.cs" />
+    <EmbeddedResource Include="Presentaciones\FrmNuevoRetiro.resx">
+      <DependentUpon>FrmNuevoRetiro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentaciones\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

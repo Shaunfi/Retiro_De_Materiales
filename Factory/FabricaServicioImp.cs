@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RetiroDeMateriales.Servicio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace RetiroDeMateriales.Factory
 {
-    public class FabricaServicioImp
+    public class FabricaServicioImp : FabricaServicio
     {
-
+        //public override IServicio CrearServicio()
+        //{
+        //    return new Servicio();
+        //}
     }
 }
