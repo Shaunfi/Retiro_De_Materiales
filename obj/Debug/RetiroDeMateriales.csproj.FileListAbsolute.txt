@@ -1,0 +1,11 @@
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.csproj.AssemblyReference.cache
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.Presentaciones.FrmNuevoRetiro.resources
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.Presentaciones.FrmPrincipal.resources
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.Properties.Resources.resources
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.csproj.GenerateResource.cache
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.csproj.CoreCompileInputs.cache
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\bin\Debug\RetiroDeMateriales.exe.config
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\bin\Debug\RetiroDeMateriales.exe
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\bin\Debug\RetiroDeMateriales.pdb
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.exe
+C:\Users\Rami\Desktop\Proyectos\C#\Windows Form\Segunda Cuatrimestre\RetiroDeMateriales\obj\Debug\RetiroDeMateriales.pdb

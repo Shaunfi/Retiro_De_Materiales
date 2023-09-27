@@ -6,14 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RetiroDeMateriales.Servicio
+namespace RetiroDeMateriales.Servicios
 {
     public interface IServicio
     {
         OrdenesRetiroDAO Ordenes { get; }
         DetallesOrdenDAO Detalles { get; }
         MaterialesDAO Materiales { get; }
-
-
     }
 }

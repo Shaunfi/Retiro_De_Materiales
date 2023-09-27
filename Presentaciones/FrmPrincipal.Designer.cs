@@ -57,7 +57,7 @@
             // nuevaToolStripMenuItem
             // 
             this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
-            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.nuevaToolStripMenuItem.Text = "Nueva";
             this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
             // 
@@ -76,6 +76,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

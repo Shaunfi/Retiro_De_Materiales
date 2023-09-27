@@ -31,6 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.codMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cIdMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cIdStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cIdCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cIdAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtBoxResponsable = new System.Windows.Forms.TextBox();
             this.cboBoxMaterial = new System.Windows.Forms.ComboBox();
             this.numCantidad = new System.Windows.Forms.NumericUpDown();
@@ -38,10 +43,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.cIdMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cIdStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cIdCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cIdAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.dgvDetalles.AllowUserToDeleteRows = false;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codMaterial,
             this.cIdMaterial,
             this.cIdStock,
             this.cIdCantidad,
@@ -78,6 +80,49 @@
             this.dgvDetalles.ReadOnly = true;
             this.dgvDetalles.Size = new System.Drawing.Size(568, 150);
             this.dgvDetalles.TabIndex = 2;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
+            this.dgvDetalles.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvDetalles_RowsAdded);
+            this.dgvDetalles.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvDetalles_RowsRemoved);
+            // 
+            // codMaterial
+            // 
+            this.codMaterial.Frozen = true;
+            this.codMaterial.HeaderText = "CODIGO";
+            this.codMaterial.Name = "codMaterial";
+            this.codMaterial.ReadOnly = true;
+            this.codMaterial.Visible = false;
+            // 
+            // cIdMaterial
+            // 
+            this.cIdMaterial.Frozen = true;
+            this.cIdMaterial.HeaderText = "MATERIAL";
+            this.cIdMaterial.Name = "cIdMaterial";
+            this.cIdMaterial.ReadOnly = true;
+            this.cIdMaterial.Width = 300;
+            // 
+            // cIdStock
+            // 
+            this.cIdStock.Frozen = true;
+            this.cIdStock.HeaderText = "STOCK";
+            this.cIdStock.Name = "cIdStock";
+            this.cIdStock.ReadOnly = true;
+            this.cIdStock.Width = 50;
+            // 
+            // cIdCantidad
+            // 
+            this.cIdCantidad.Frozen = true;
+            this.cIdCantidad.HeaderText = "CANTIDAD";
+            this.cIdCantidad.Name = "cIdCantidad";
+            this.cIdCantidad.ReadOnly = true;
+            this.cIdCantidad.Width = 70;
+            // 
+            // cIdAcciones
+            // 
+            this.cIdAcciones.Frozen = true;
+            this.cIdAcciones.HeaderText = "Acciones";
+            this.cIdAcciones.Name = "cIdAcciones";
+            this.cIdAcciones.ReadOnly = true;
+            this.cIdAcciones.Width = 110;
             // 
             // txtBoxResponsable
             // 
@@ -119,6 +164,7 @@
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -128,6 +174,7 @@
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label2
             // 
@@ -146,38 +193,7 @@
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // cIdMaterial
-            // 
-            this.cIdMaterial.Frozen = true;
-            this.cIdMaterial.HeaderText = "MATERIAL";
-            this.cIdMaterial.Name = "cIdMaterial";
-            this.cIdMaterial.ReadOnly = true;
-            this.cIdMaterial.Width = 300;
-            // 
-            // cIdStock
-            // 
-            this.cIdStock.Frozen = true;
-            this.cIdStock.HeaderText = "STOCK";
-            this.cIdStock.Name = "cIdStock";
-            this.cIdStock.ReadOnly = true;
-            this.cIdStock.Width = 50;
-            // 
-            // cIdCantidad
-            // 
-            this.cIdCantidad.Frozen = true;
-            this.cIdCantidad.HeaderText = "CANTIDAD";
-            this.cIdCantidad.Name = "cIdCantidad";
-            this.cIdCantidad.ReadOnly = true;
-            this.cIdCantidad.Width = 70;
-            // 
-            // cIdAcciones
-            // 
-            this.cIdAcciones.Frozen = true;
-            this.cIdAcciones.HeaderText = "Acciones";
-            this.cIdAcciones.Name = "cIdAcciones";
-            this.cIdAcciones.ReadOnly = true;
-            this.cIdAcciones.Width = 110;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // FrmNuevoRetiro
             // 
@@ -216,6 +232,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codMaterial;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIdMaterial;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIdStock;
         private System.Windows.Forms.DataGridViewTextBoxColumn cIdCantidad;

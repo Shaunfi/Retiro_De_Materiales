@@ -1,4 +1,4 @@
-﻿using RetiroDeMateriales.Servicio;
+﻿using RetiroDeMateriales.Servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace RetiroDeMateriales.Factory
 {
     public abstract class FabricaServicio
     {
-        //public abstract IServicio CrearServicio();
+        public abstract IServicio CrearServicio();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RetiroDeMateriales.Factory;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,22 @@ namespace RetiroDeMateriales.Presentaciones
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        private FabricaServicio fabrica;
+
+        public FrmPrincipal(FabricaServicio fabrica)
         {
             InitializeComponent();
+            this.fabrica = fabrica;
         }
 
         private void nuevaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FrmNuevoRetiro().ShowDialog();
+            new FrmNuevoRetiro(fabrica).ShowDialog();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

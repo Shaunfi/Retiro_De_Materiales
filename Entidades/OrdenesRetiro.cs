@@ -33,5 +33,14 @@ namespace RetiroDeMateriales.Entidades
         public DateTime Fecha { get => fecha; set => fecha = value; }
         public string Responsable { get => responsable; set => responsable = value; }
         public List<DetallesOrden> LDetalles { get => lDetalles; set => lDetalles = value; }
+
+        public void AgregarDetalle(DetallesOrden detalle)
+        {
+            LDetalles.Add(detalle);
+        }
+        public void QuitarDetalle(int posicion)
+        {
+            LDetalles.RemoveAt(posicion);
+        }
     }
 }

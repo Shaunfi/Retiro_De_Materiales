@@ -10,9 +10,9 @@ namespace RetiroDeMateriales.Entidades
     {
         private int codigo;
         private string nombre;
-        private int stock;
+        private double stock;
 
-        public Materiales(int codigo, string nombre, int stock)
+        public Materiales(int codigo, string nombre, double stock)
         {
             this.codigo = codigo;
             this.nombre = nombre;
@@ -28,6 +28,6 @@ namespace RetiroDeMateriales.Entidades
 
         public int Codigo { get => codigo; set => codigo = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Stock { get => stock; set => stock = value; }
+        public double Stock { get => stock; set => stock = value; }
     }
 }

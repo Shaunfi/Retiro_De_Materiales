@@ -1,4 +1,5 @@
-﻿using RetiroDeMateriales.Presentaciones;
+﻿using RetiroDeMateriales.Factory;
+using RetiroDeMateriales.Presentaciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace RetiroDeMateriales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmPrincipal(new FabricaServicioImp()));
         }
     }
 }
